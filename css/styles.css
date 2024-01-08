@@ -124,7 +124,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
   padding: 24px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:hover,
 .address:focus {
@@ -171,7 +170,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-one-button:hover,
 .section-one-button:focus {
@@ -298,10 +296,6 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -322,7 +316,6 @@ body {
 }
 .portfolio-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -397,7 +390,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fourth-socialmedia-a:hover,
 .fourth-socialmedia-a:focus {
@@ -437,8 +429,6 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--light-slate);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-five-customers-a:hover,
 .section-five-customers-a:focus {
@@ -481,7 +471,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-media-a:hover,
 .footer-social-media-a:focus {
@@ -491,12 +480,14 @@ body {
   fill: var(--cloud);
 }
 
-/* hw 5 styles */
+/* hw 5 styles (lms)*/
+
 .web-active {
   color: var(--ocean);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .web-active::after {
   content: "";
   position: absolute;
@@ -507,28 +498,25 @@ body {
   border-radius: 2px;
   width: 100%;
 }
-/* hw5 portfolio */
-.portfolio-link:hover .paragraph-portfolio-image,
-.portfolio-link:focus .paragraph-portfolio-image {
-  transform: translateY(0%);
+
+.address {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-card {
-  position: relative;
-  overflow: hidden;
+
+.section-one-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.paragraph-portfolio-image {
-  position: absolute;
-  top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
-  padding: 40px 32px;
-  background-color: var(--iris);
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.fourth-socialmedia-a {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-five-customers-a {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-a {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* modal */
@@ -541,13 +529,14 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal-window {
   position: absolute;
   top: 50%;
@@ -561,6 +550,7 @@ body {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-button {
   position: absolute;
   top: 24px;
@@ -578,18 +568,58 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-button:hover,
 .modal-button:focus {
   background-color: var(--ocean);
   border: none;
   fill: var(--white);
 }
+
 .modal-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* hw6 */
-.footer-form-paragraph {
+/* hw5 portfolio */
+
+.portfolio-button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover .paragraph-portfolio-image,
+.portfolio-link:focus .paragraph-portfolio-image {
+  transform: translateY(0%);
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.paragraph-portfolio-image {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+  background-color: var(--iris);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* footer form */
+.footer-paragraph {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -597,14 +627,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-.footer-form-style {
+.footer-form {
   display: flex;
   gap: 24px;
 }
-.name-input {
+.email-input {
   width: 264px;
   height: 40px;
-  border: var(--white);
+  border: 1px solid var(--white);
   background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
@@ -615,10 +645,10 @@ body {
   color: var(--white);
 }
 
-.name-input::placeholder {
+::placeholder {
   color: var(--white);
 }
-.subscribe-button {
+.submit-footer {
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -635,10 +665,14 @@ body {
   border: none;
   border-radius: 4px;
 }
-
-.svg-button {
+.subscribe-svg {
   margin-left: 16px;
 }
+
+.modal-window {
+  padding: 72px 24px 24px 24px;
+}
+
 .modal-paragraph {
   font-weight: 500;
   font-size: 16px;
@@ -651,7 +685,7 @@ body {
 .modal-form {
   margin-bottom: 8px;
 }
-.modal-label {
+.modal-label-name {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -659,20 +693,22 @@ body {
   display: block;
   margin-bottom: 4px;
 }
-.modal-icons-input {
+
+.input-icon {
   position: relative;
 }
-.username-modal {
+.modal-name-input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: (1px solid rgba(46, 47, 66, 0.4));
   border-radius: 4px;
-  background-color: transparent;
+  background-color: transparen;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.username-modal:focus {
+
+.modal-name-input:focus {
   border-color: var(--iris);
 }
 .modal-name-svg {
@@ -682,20 +718,25 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-name-svg:focus {
+
+.user-name:focus-within .modal-name-svg {
   fill: var(--iris);
 }
-.modal-fourth-form {
+.modal-name-svg {
+  fill: initial;
+}
+
+.modal-comment {
   margin-bottom: 16px;
 }
-.text-area {
+.modal-text-area {
   width: 100%;
   height: 120px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: (1px solid rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
@@ -703,22 +744,23 @@ body {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text-area:focus {
+.modal-text-area:focus {
   border-color: var(--iris);
 }
-.modal-fifth-form {
+.modal-checkbox {
   margin-bottom: 24px;
 }
-.label-fifth-form {
+.checkbox-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
-.privacy-span {
+.label-span {
   width: 16px;
   height: 16px;
-  border: (1px solid rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -728,19 +770,20 @@ body {
   justify-content: center;
   fill: transparent;
 }
-.svg-privacy:checked {
+
+.check-box:checked .label-span {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
 }
-.privacy-policy{
+.policy {
   color: var(--iris);
 }
-.form-button{
+.modal-form-button {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Robot", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
