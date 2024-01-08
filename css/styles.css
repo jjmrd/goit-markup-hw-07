@@ -774,7 +774,6 @@ body {
   justify-content: center;
   fill: transparent;
 }
-
 .check-box:checked + .label-span {
   background-color: var(--ocean);
   border: none;
