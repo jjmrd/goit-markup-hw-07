@@ -439,6 +439,7 @@ body {
   color: var(--ocean);
   border-color: var(--ocean);
 }
+
 .section-five-svg {
   fill: currentColor;
 }
@@ -760,6 +761,9 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
+  /* align-items: center;
+  justify-content: center;
+  fill: transparent; */
 }
 .label-span {
   width: 16px;
@@ -772,13 +776,16 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* additional - trial*/
   fill: transparent;
+  margin-right: 8px;
 }
-.check-box:checked + .label-span {
-  background-color: var(--ocean);
+.check-box:checked + .checkbox-label .label-span{
+  background-color: var(--ocean); 
   border: none;
   fill: var(--cloud);
 }
+
 .policy {
   color: var(--iris);
 }
