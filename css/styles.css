@@ -653,7 +653,7 @@ body {
   color: var(--white);
 }
 
-::placeholder {
+.footer-form::placeholder {
   color: var(--white);
 }
 .submit-footer {
