@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRIAL_ASSIGNMENT</title>
+    <title>Main</title>
     <!--Style Normalization-->
     <link
       rel="stylesheet"
@@ -67,14 +67,16 @@
           </a>
         </nav>
         <!-- burger-open -->
-          <svg class="burger-icon menu-button burger-visible js-open-menu" width="32" height="22">
+        <button class="menu-toggle js-open-menu" aria-expanded="true" aria-controls="mobile-menu">
+          <svg class="burger-icon" width="32" height="22">
             <use href="./images/icons.svg#burger"></use>
           </svg>
+        </button>
       </div>
       <!-- burger-close -->
       <div class="mobile-menu js-menu-container" id="mobile-menu">
         <div class="mobile-menu-container">
-          <button class="mobile-menu-close modal-button js-close-menu">
+          <button class="menu-toggle mobile-menu-close modal-button js-close-menu">
             <svg width="8" height="8" class="modal-svg">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -107,12 +109,36 @@
                 </li>
               </ul>
             </address> 
-            <ul class="socials-svg">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>           
+            <ul class="socials-svg list">
+              <li class="burger-list">
+                <a class="burger-a" href="">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-list">
+                <a class="burger-a" href="">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#twitter-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-list">
+                <a class="burger-a" href="">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#facebook-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="burger-list">
+                <a class="burger-a" href="">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin-2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>          
           </div>
           </div>
         </div>
@@ -210,7 +236,7 @@
           <h2 class="section-four-header">Our Team</h2>
           <ul class="section-four-ul list">
             <li class="section-four-list">
-              <img src="./images/Team%20Card%201.jpg" srcset="./images/2x/Team_Mark_Guerrero_2x.jpg 2x" alt="i1" width="264" />
+              <img src="./images/mark.jpg" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Mark Guerrero</h3>
                 <p class="section-four-title">Product Designer</p>
@@ -247,7 +273,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%202.jpg" srcset="./images/2x/Team_Tom_Ford_2x.jpg 2x" alt="i1" width="264" />
+              <img src="./images/tom.jpg" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Tom Ford</h3>
                 <p class="section-four-title">Frontend Developer</p>
@@ -284,7 +310,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%203.jpg" srcset="./images/2x/Team_Camila_Garcia_2x.jpg 2x" alt="i1" width="264" />
+              <img src="./images/camila.jpg" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Camila Garcia</h3>
                 <p class="section-four-title">Marketing</p>
@@ -321,7 +347,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%204.jpg" srcset="./images/2x/Team_Daniel_Wilson_2x.jpg 2x" alt="i1" width="264" />
+              <img src="./images/daniel.jpg" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Daniel Wilson</h3>
                 <p class="section-four-title">UI Designer</p>
