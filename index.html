@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
+    <title>TRIAL_ASSIGNMENT</title>
     <!--Style Normalization-->
     <link
       rel="stylesheet"
@@ -59,6 +59,64 @@
           </ul>
         </address>
       </div>
+      <!-- header in mobile view -->
+      <div class="mobile-header-container container">
+        <nav class="logo">
+          <a class="web-logo link" href="./index.html"
+            >Web<span class="studio-logo">Studio</span>
+          </a>
+        </nav>
+        <!-- burger-open -->
+          <svg class="burger-icon menu-button burger-visible js-open-menu" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+      </div>
+      <!-- burger-close -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close modal-button js-close-menu">
+            <svg width="8" height="8" class="modal-svg">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <div class="mobile-container">
+            <ul class="mobile-container-ul">
+              <li>
+                <a class="mobile-link link" href="#">Studio</a>
+              </li>
+              <li>
+                <a class="mobile-link link" href="#">Portfolio</a>
+              </li>
+              <li>
+                <a class="mobile-link link" href="#">Contacts</a>
+              </li>
+            </ul>
+          <div>
+          <div class="mobile-container-two">
+            <address class="mobile-address">
+              <ul class="mobile-address-ul list">
+                <li>
+                  <a class="mobile-address-tel link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-address-email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address> 
+            <ul class="socials-svg">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>           
+          </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Index Main -->
     <main>
@@ -77,7 +135,6 @@
       <section class="second-section">
         <div class="container">
           <h2 class="visually-hidden">Lorem, ipsum.</h2>
-
           <ul class="section-two-ul list">
             <li class="section-two-list">
               <div class="second-icon-div">
@@ -136,13 +193,13 @@
           <h2 class="section-three-header">What are we doing</h2>
           <ul class="section-three-ul list">
             <li class="section-three-list">
-              <img src="./images/img%201.jpg" alt="i1" width="360" />
+              <img src="./images/img%201.jpg" srcset="./images/2x/image1_2x.jpg 2x" alt="i1" width="360" />
             </li>
             <li class="section-three-list">
-              <img src="./images/img%202.jpg" alt="i2" width="360" />
+              <img src="./images/img%202.jpg" srcset="./images/2x/image2_2x.jpg 2x" alt="i2" width="360" />
             </li>
             <li class="section-three-list">
-              <img src="./images/img%203.jpg" alt="i3" width="360" />
+              <img src="./images/img%203.jpg" srcset="./images/2x/image3_2x.jpg 2x" alt="i3" width="360" />
             </li>
           </ul>
         </div>
@@ -153,7 +210,7 @@
           <h2 class="section-four-header">Our Team</h2>
           <ul class="section-four-ul list">
             <li class="section-four-list">
-              <img src="./images/Team%20Card%201.jpg" alt="i1" width="264" />
+              <img src="./images/Team%20Card%201.jpg" srcset="./images/2x/Team_Mark_Guerrero_2x.jpg 2x" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Mark Guerrero</h3>
                 <p class="section-four-title">Product Designer</p>
@@ -190,7 +247,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%202.jpg" alt="i1" width="264" />
+              <img src="./images/Team%20Card%202.jpg" srcset="./images/2x/Team_Tom_Ford_2x.jpg 2x" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Tom Ford</h3>
                 <p class="section-four-title">Frontend Developer</p>
@@ -227,7 +284,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%203.jpg" alt="i1" width="264" />
+              <img src="./images/Team%20Card%203.jpg" srcset="./images/2x/Team_Camila_Garcia_2x.jpg 2x" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Camila Garcia</h3>
                 <p class="section-four-title">Marketing</p>
@@ -264,7 +321,7 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img src="./images/Team%20Card%204.jpg" alt="i1" width="264" />
+              <img src="./images/Team%20Card%204.jpg" srcset="./images/2x/Team_Daniel_Wilson_2x.jpg 2x" alt="i1" width="264" />
               <div class="section-four-div">
                 <h3 class="section-four-employee">Daniel Wilson</h3>
                 <p class="section-four-title">UI Designer</p>
@@ -356,7 +413,7 @@
     </main>
     <!-- Index Footer -->
     <footer class="footer-part">
-      <div class="footer-div container">
+      <div class="footer-div container" id="footer-container">
         <div class="footer-wrap">
           <a class="web-logo footer-logo link" href="./index.html"
             >Web<span class="logo-footer">Studio</span>
@@ -400,7 +457,7 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="footer-paragraph">Subscribe</p>
+          <p class="footer-paragraph subscribe-footer">Subscribe</p>
           <form class="footer-form">
             <label class="form-label">
               <input
@@ -505,5 +562,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
